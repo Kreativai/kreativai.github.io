@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en" style="color-scheme: light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joseph Sebastian · AI Creative Director</title>
+  <meta name="description" content="AI video, motion design, and product visuals for brands that need to look expensive on every feed." />
+  <meta name="author" content="Joseph Sebastian" />
+  <meta name="theme-color" content="#FAFAF6" />
+  <link rel="canonical" href="https://kreativai.github.io/" />
+  <meta property="og:title" content="Joseph Sebastian · AI Creative Director" />
+  <meta property="og:description" content="AI video, motion design, and product visuals for brands that need to look expensive on every feed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://kreativai.github.io/assets/brand/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://kreativai.github.io/assets/brand/og.png" />
+  <link rel="icon" href="/assets/brand/favicon.svg" />
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: "#fafaf6",
+            ink: "#141417",
+            mist: "#e9e7df",
+            ultra: "#2741d6",
+          },
+          fontFamily: {
+            sans: ["Satoshi", "ui-sans-serif", "system-ui", "sans-serif"],
+            mono: ["JetBrains Mono", "ui-monospace", "SF Mono", "monospace"],
+          },
+        },
+      },
+    };
+  </script>
+  <style type="text/tailwindcss"></style>
+  <style>
+    .paper-grid {
+      background-image: linear-gradient(to right, rgba(20, 20, 23, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(20, 20, 23, 0.04) 1px, transparent 1px);
+      background-size: 96px 96px;
+    }
+    .film-holes {
+      height: 14px;
+      background-color: #141417;
+      background-image: radial-gradient(circle at 11px 7px, #fafaf6 3.5px, transparent 4.5px);
+      background-size: 22px 14px;
+      background-repeat: repeat-x;
+    }
+    @keyframes rise-in {
+      from { transform: translateY(0.65em); }
+      to { transform: translateY(0); }
+    }
+    .rise-line { overflow: hidden; }
+    .rise-line > span {
+      display: block;
+      animation: rise-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    .rise-d1 > span { animation-delay: 0.08s; }
+    .rise-d2 > span { animation-delay: 0.16s; }
+    .strip-scroll { scrollbar-width: none; }
+    .strip-scroll::-webkit-scrollbar { display: none; }
+    .ruler-ticks {
+      background-image: repeating-linear-gradient(
+        to right,
+        rgba(20, 20, 23, 0.35) 0 1px,
+        transparent 1px 12px
+      );
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .rise-line > span { animation: none; }
+    }
+  </style>
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+<main class="min-h-[100dvh] bg-paper">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 border-b border-mist bg-paper/95 backdrop-blur-sm">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
+      <a href="#top" class="flex flex-col leading-none">
+        <span class="font-sans text-xl font-black tracking-tighter">Joseph Sebastian<span class="text-ultra">.</span></span>
+        <span class="mt-0.5 font-mono text-[9px] uppercase tracking-[0.25em] text-ink/60">AI Creative Director</span>
+      </a>
+      <nav class="flex items-center gap-6 font-mono text-xs uppercase tracking-widest">
+        <a href="#services" class="hidden text-ink/70 transition-colors hover:text-ultra sm:block">Services</a>
+        <a href="#films" class="hidden text-ink/70 transition-colors hover:text-ultra sm:block">Work</a>
+        <a href="#contact" class="text-ink/70 transition-colors hover:text-ultra">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="paper-grid">
+    <div class="mx-auto grid max-w-6xl gap-12 px-5 pb-20 pt-14 md:grid-cols-[3fr_2fr] md:gap-16 md:pt-20">
+      <div class="flex flex-col justify-center">
+        <h1 class="font-sans text-6xl font-black leading-[0.95] tracking-tighter md:text-8xl">
+          <span class="rise-line block"><span>Hi, I&#8217;m</span></span>
+          <span class="rise-line rise-d1 block"><span>Joseph<span class="text-ultra">.</span></span></span>
+        </h1>
+        <p class="mt-6 max-w-[46ch] text-lg leading-relaxed text-ink/80">
+          I&#8217;m an AI Creative Director. I make videos, motion graphics, and
+          product visuals with AI, so your brand looks expensive without a film crew.
+        </p>
+        <div class="mt-9 flex flex-wrap items-center gap-6">
+          <a href="mailto:jspsebastian@gmail.com?subject=Project%20inquiry"
+             class="border-2 border-ink px-7 py-3.5 font-mono text-sm font-bold uppercase tracking-widest transition-colors hover:border-ultra hover:bg-ultra hover:text-paper active:translate-y-[1px]">
+            Start a project
+          </a>
+          <a href="#services" class="group font-mono text-sm uppercase tracking-widest text-ultra underline decoration-2 underline-offset-8">
+            See what I do
+            <span class="ml-2 inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
+          </a>
+        </div>
+        <p class="mt-10 font-mono text-[11px] uppercase tracking-[0.25em] text-ink/45">
+          The presenter in this video is my AI twin
+        </p>
+      </div>
+      <div class="mx-auto w-full max-w-xs md:max-w-none">
+        <div class="bg-ink shadow-[8px_8px_0_rgba(20,20,23,0.12)]">
+          <div class="film-holes"></div>
+          <div class="relative">
+            <video id="intro-video" class="aspect-[9/16] max-h-[56dvh] w-full object-cover"
+                   src="/assets/brand/intro.mp4" poster="/assets/brand/intro-poster.png"
+                   autoplay muted loop playsinline preload="metadata"></video>
+            <button id="sound-btn" type="button"
+                    class="absolute bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-2 border border-paper/60 bg-ink/70 px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-paper backdrop-blur-sm transition-colors hover:bg-ultra active:translate-y-[1px]">
+              <svg viewBox="0 0 24 24" class="h-3.5 w-3.5 fill-paper" aria-hidden="true"><path id="sound-icon" d="M3 9v6h4l5 5V4L7 9H3zm13.6 3l3.2 3.2-1.4 1.4-3.2-3.2-3.2 3.2-1.4-1.4 3.2-3.2-3.2-3.2 1.4-1.4 3.2 3.2 3.2-3.2 1.4 1.4L16.6 12z"/></svg>
+              <span id="sound-label">Hear my intro</span>
+            </button>
+          </div>
+          <div class="film-holes"></div>
+        </div>
+        <p class="mt-3 text-center font-mono text-sm tracking-[0.2em] text-ultra">INTRO / 00:00:15:00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="border-t border-mist py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="font-sans text-4xl font-black tracking-tighter md:text-6xl">What I do</h2>
+        <p class="max-w-[34ch] text-base leading-relaxed text-ink/75">
+          Seven services covering the whole pipeline, from script to final cut.
+          Tap a row to jump straight to the work.
+        </p>
+      </div>
+      <ul class="mt-10" id="service-list"></ul>
+    </div>
+  </section>
+
+  <!-- Films -->
+  <section id="films" class="border-t border-mist py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="font-sans text-4xl font-black tracking-tighter md:text-6xl">AI video work</h2>
+      <p class="mt-4 max-w-[52ch] text-base leading-relaxed text-ink/75">
+        Explainers, avatar podcasts, and AI twins. Tap any frame to watch.
+      </p>
+    </div>
+    <div class="mx-auto mt-12 grid max-w-6xl gap-10 px-5 md:grid-cols-3 md:gap-6">
+      <figure class="bg-paper p-2 pb-3 shadow-[6px_6px_0_rgba(20,20,23,0.1)] ring-1 ring-mist transition-transform duration-300 hover:-translate-y-1 md:-rotate-1">
+        <div class="film-frame relative aspect-[9/16] w-full overflow-hidden bg-ink"
+             data-drive="1xD-zxOsLovmZnORnD2W_IAX3KlqiPzup" data-title="Animated explainer film"
+             data-poster="/assets/work/poster-anim-1.jpg" data-tc="00:01:12:07"></div>
+        <figcaption class="mt-2 flex items-baseline justify-between gap-4">
+          <span class="text-sm font-medium">Animated explainer film</span>
+          <span class="font-mono text-[11px] uppercase text-ink/50">EXPLAINER.MP4</span>
+        </figcaption>
+      </figure>
+      <figure class="bg-paper p-2 pb-3 shadow-[6px_6px_0_rgba(20,20,23,0.1)] ring-1 ring-mist transition-transform duration-300 hover:-translate-y-1 md:translate-y-4">
+        <div class="film-frame relative aspect-[9/16] w-full overflow-hidden bg-ink"
+             data-drive="1Vsb2H3fAL7-rYtIDczypOPsADXu4Zhil" data-title="AI avatar podcast"
+             data-poster="/assets/work/poster-podcast-2.jpg" data-tc="00:02:45:18"></div>
+        <figcaption class="mt-2 flex items-baseline justify-between gap-4">
+          <span class="text-sm font-medium">AI avatar podcast</span>
+          <span class="font-mono text-[11px] uppercase text-ink/50">AVATAR.MP4</span>
+        </figcaption>
+      </figure>
+      <figure class="bg-paper p-2 pb-3 shadow-[6px_6px_0_rgba(20,20,23,0.1)] ring-1 ring-mist transition-transform duration-300 hover:-translate-y-1 md:rotate-1">
+        <div class="film-frame relative aspect-[9/16] w-full overflow-hidden bg-ink"
+             data-drive="16IT_d2_RTadS9xxU7hzDzjud2yB8uHhK" data-title="Explainer, cut two"
+             data-poster="/assets/work/poster-anim-2.jpg" data-tc="00:01:04:11"></div>
+        <figcaption class="mt-2 flex items-baseline justify-between gap-4">
+          <span class="text-sm font-medium">Explainer, cut two</span>
+          <span class="font-mono text-[11px] uppercase text-ink/50">EXPLAINER.MP4</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="mx-auto mt-16 max-w-6xl px-5">
+      <figure class="mx-auto max-w-3xl bg-paper p-2 pb-3 shadow-[6px_6px_0_rgba(20,20,23,0.1)] ring-1 ring-mist transition-transform duration-300 hover:-translate-y-1 md:-rotate-[0.5deg]">
+        <div class="film-frame relative aspect-video w-full overflow-hidden bg-ink"
+             data-drive="1n16hbs9unazkz96PR5euRFrHR64oTd8z" data-title="AI twin presenter"
+             data-poster="/assets/work/poster-twin-1.jpg" data-tc="00:00:58:03"></div>
+        <figcaption class="mt-2 flex items-baseline justify-between gap-4">
+          <span class="text-sm font-medium">AI twin presenter</span>
+          <span class="font-mono text-[11px] uppercase text-ink/50">TWIN.MP4</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Motion for social -->
+  <section id="social" class="border-t border-mist py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="flex flex-wrap items-end justify-between gap-6">
+        <h2 class="font-sans text-4xl font-black tracking-tighter md:text-6xl">Motion for social feeds</h2>
+        <p class="max-w-[36ch] text-base leading-relaxed text-ink/75">
+          Scroll-stopping loops built for Instagram and TikTok, on brand every frame.
+        </p>
+      </div>
+    </div>
+    <div class="strip-scroll mt-10 overflow-x-auto">
+      <div class="mx-auto w-max min-w-full bg-ink px-6 py-0">
+        <div class="film-holes"></div>
+        <div class="flex gap-4 px-2 py-4" id="loop-strip"></div>
+        <div class="film-holes"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stills -->
+  <section id="stills" class="border-t border-mist py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <h2 class="max-w-[14ch] font-sans text-4xl font-black tracking-tighter md:text-6xl">Still design and print</h2>
+      <p class="mt-4 max-w-[46ch] text-base leading-relaxed text-ink/75">
+        Carousels, campaign stills, and brochures that carry one brand voice from feed to shelf.
+      </p>
+      <div class="mt-12 columns-2 gap-4 md:columns-3" id="stills-grid"></div>
+    </div>
+  </section>
+
+  <!-- Product photoshoot -->
+  <section id="photoshoot" class="border-t border-mist py-20">
+    <div class="mx-auto grid max-w-6xl items-end gap-10 px-5 md:grid-cols-[2fr_3fr]">
+      <div class="order-2 md:order-1">
+        <h2 class="font-sans text-4xl font-black tracking-tighter md:text-5xl">AI product photoshoot</h2>
+        <p class="mt-4 max-w-[40ch] text-base leading-relaxed text-ink/75">
+          One render file becomes field photography: catalog shots, on-site installs,
+          even flood scenarios you could never shoot safely.
+        </p>
+        <p class="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-ink/50">No studio. No unit shipping.</p>
+      </div>
+      <div class="order-1 md:order-2">
+        <img src="/assets/work/product-1.png"
+             alt="Before and after: technical render turned into field product photography"
+             class="w-full bg-paper p-2 ring-1 ring-mist shadow-[6px_6px_0_rgba(20,20,23,0.1)]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="relative overflow-hidden border-t border-mist">
+    <svg aria-hidden="true" viewBox="0 0 24 24" class="pointer-events-none absolute left-1/2 top-1/2 h-[130%] w-auto -translate-x-1/2 -translate-y-1/2 opacity-[0.07]">
+      <path d="M6 4.5v15l13-7.5z" fill="none" stroke="#2741d6" stroke-width="0.8"/>
+    </svg>
+    <div class="relative mx-auto max-w-6xl px-5 py-28 text-center">
+      <h2 class="font-sans text-5xl font-black tracking-tighter md:text-7xl">Your next video starts here</h2>
+      <a href="mailto:jspsebastian@gmail.com?subject=Project%20inquiry"
+         class="group mt-12 flex w-full items-center justify-between border-2 border-ink px-6 py-6 transition-colors hover:bg-ultra hover:text-paper md:px-10">
+        <span class="font-mono text-sm font-bold uppercase tracking-[0.25em] md:text-base">Start a project</span>
+        <span class="text-2xl transition-transform group-hover:translate-x-2">&rarr;</span>
+      </a>
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 font-mono text-xs uppercase tracking-widest text-ink/60">
+        <a href="mailto:jspsebastian@gmail.com" class="underline underline-offset-4 hover:text-ultra">jspsebastian@gmail.com</a>
+      </div>
+    </div>
+    <div class="border-t border-mist py-5 text-center font-mono text-[11px] uppercase tracking-widest text-ink/40">
+      &copy; 2026 Joseph Sebastian
+    </div>
+  </section>
+
+</main>
+
+<script>
+  const SERVICES = [
+    { name: "AI Avatar Podcast", desc: "Talking head podcast videos, no filming day needed", tag: "AVATAR.MP4", href: "#films" },
+    { name: "AI Twin", desc: "A digital twin of you that presents on camera", tag: "TWIN.MP4", href: "#films" },
+    { name: "AI Video Animation Explainer", desc: "Narrated animated films that explain your product", tag: "EXPLAINER.MP4", href: "#films" },
+    { name: "Motion Social Media Design", desc: "Short animated loops for Instagram and TikTok", tag: "MOTION.MP4", href: "#social" },
+    { name: "Still Social Media Design", desc: "Carousels and campaign stills in your brand voice", tag: "STILL.PNG", href: "#stills" },
+    { name: "Brochure Graphic Design", desc: "Print flyers and catalogs, retail ready", tag: "PRINT.PDF", href: "#stills" },
+    { name: "AI Product Photoshoot", desc: "Product photography from a render file, no studio", tag: "PRODUCT.RAW", href: "#photoshoot" },
+  ];
+  document.getElementById("service-list").innerHTML = SERVICES.map((s, i) => `
+    <li class="border-t border-mist last:border-b">
+      <a href="${s.href}" class="group grid grid-cols-[2.5rem_1fr_auto] items-center gap-4 py-5 transition-colors duration-200 hover:bg-ultra">
+        <span class="pl-1 font-mono text-sm text-ink/50 group-hover:text-paper/80">${String(i + 1).padStart(2, "0")}</span>
+        <span>
+          <span class="block font-sans text-xl font-bold tracking-tight group-hover:text-paper md:text-3xl">${s.name}</span>
+          <span class="mt-0.5 block text-sm text-ink/60 group-hover:text-paper/80">${s.desc}</span>
+        </span>
+        <span class="pr-2 text-right">
+          <span class="block font-mono text-xs uppercase text-ink/50 group-hover:text-paper/80">${s.tag}</span>
+          <span class="mt-1 block font-mono text-lg text-ink/40 transition-transform group-hover:translate-x-1 group-hover:text-paper">&rarr;</span>
+        </span>
+      </a>
+    </li>`).join("");
+
+  const LOOPS = [
+    ["motion-1", "00:00:00:00"], ["motion-2", "00:00:06:00"], ["motion-3", "00:00:12:00"],
+    ["motion-4", "00:00:18:00"], ["motion-5", "00:00:24:00"], ["motion-6", "00:00:30:00"],
+  ];
+  document.getElementById("loop-strip").innerHTML = LOOPS.map(([n, tc], i) => `
+    <figure class="w-48 shrink-0 md:w-56">
+      <div class="overflow-hidden ${i === 2 ? "ring-2 ring-ultra" : ""}">
+        <video class="aspect-[9/16] w-full object-cover" src="/assets/work/${n}.mp4"
+               poster="/assets/work/poster-${n}.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+      <figcaption class="mt-2 text-center font-mono text-[11px] text-paper/70">${tc}</figcaption>
+    </figure>`).join("");
+
+  const STILLS = [
+    ["still-1.jpg", "Smart helmet carousel / @jashen.id"],
+    ["brochure-3.jpg", "December promo flyer / retail"],
+    ["still-3.jpg", "Arc flash awareness / Instagram 4:5"],
+    ["brochure-1.jpg", "Anniversary poster / supermarket"],
+    ["still-2.jpg", "Switchgear story carousel / B2B"],
+    ["brochure-6.jpg", "Ramadhan promo flyer / retail"],
+  ];
+  document.getElementById("stills-grid").innerHTML = STILLS.map(([f, cap], i) => `
+    <figure class="mb-4 break-inside-avoid bg-paper p-2 pb-3 ring-1 ring-mist ${i % 3 === 0 ? "md:rotate-[0.6deg]" : i % 3 === 1 ? "md:-rotate-[0.6deg]" : ""}">
+      <img src="/assets/work/${f}" alt="${cap}" class="w-full" loading="lazy" />
+      <figcaption class="mt-2 font-mono text-[11px] text-ink/55">${cap}</figcaption>
+    </figure>`).join("");
+
+  document.querySelectorAll(".film-frame").forEach((frame) => {
+    const { drive, title, poster, tc } = frame.dataset;
+    frame.innerHTML = `
+      <button type="button" aria-label="Play: ${title}" class="group absolute inset-0 h-full w-full cursor-pointer">
+        <img src="${poster}" alt="${title}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy" />
+        <span class="absolute inset-0 flex items-center justify-center">
+          <span class="flex h-14 w-14 items-center justify-center rounded-full bg-paper/90 transition-colors group-hover:bg-ultra">
+            <svg viewBox="0 0 24 24" class="ml-1 h-5 w-5 fill-ink transition-colors group-hover:fill-paper" aria-hidden="true"><path d="M6 4.5v15l13-7.5z"/></svg>
+          </span>
+        </span>
+        <span class="absolute bottom-3 left-3 font-mono text-xs text-paper/90">${tc}</span>
+      </button>`;
+    frame.querySelector("button").addEventListener("click", () => {
+      frame.innerHTML = `<iframe class="absolute inset-0 h-full w-full" src="https://drive.google.com/file/d/${drive}/preview" title="${title}" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
+    });
+  });
+
+  const introVideo = document.getElementById("intro-video");
+  const soundBtn = document.getElementById("sound-btn");
+  const soundLabel = document.getElementById("sound-label");
+  const soundIcon = document.getElementById("sound-icon");
+  const ICON_MUTED = "M3 9v6h4l5 5V4L7 9H3zm13.6 3l3.2 3.2-1.4 1.4-3.2-3.2-3.2 3.2-1.4-1.4 3.2-3.2-3.2-3.2 1.4-1.4 3.2 3.2 3.2-3.2 1.4 1.4L16.6 12z";
+  const ICON_ON = "M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z";
+  soundBtn.addEventListener("click", () => {
+    const nowMuted = !introVideo.muted;
+    introVideo.muted = nowMuted;
+    if (!nowMuted) {
+      introVideo.currentTime = 0;
+      introVideo.play();
+    }
+    soundLabel.textContent = nowMuted ? "Hear my intro" : "Sound off";
+    soundIcon.setAttribute("d", nowMuted ? ICON_MUTED : ICON_ON);
+  });
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll("video[autoplay]").forEach((v) => {
+      v.pause();
+      v.removeAttribute("autoplay");
+    });
+  }
+</script>
+</body>
+</html>
